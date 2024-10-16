@@ -5,6 +5,27 @@ const btLongo = document.querySelector('.app__card-button--longo')
 const imagemDestaque = document.querySelector('.app__image')
 let alterarTitulo =  document.querySelector('.app__title');
 let btRmDestaque = document.querySelectorAll('.app__card-button')
+let btAtivarMusica = document.querySelector('#alternar-musica');
+let musica = new Audio('./sons/luna-rise-part-one.mp3');
+musica.loop = true;
+let tempoDecorridoSegundos = 5;
+let btStartPause = document.querySelector('#start-pause')
+
+const contagemRegressiva = ()=>{
+    //iniciarTempo()
+    tempoDecorridoSegundos -= 1
+    console.log("tempo: " + tempoDecorridoSegundos)
+}
+
+let intervaloDeExecucao = null;
+
+btAtivarMusica.addEventListener('change', ()=>{
+    if(musica.paused){
+        musica.play()
+    }else{
+        musica.pause()
+    }
+})
 
 btFoco.addEventListener('click', ()=>{
     alternarContexto('foco')
@@ -47,3 +68,12 @@ function alternarContexto(contexto){
     }
 
 }
+
+btStartPause.addEventListener('click', contagemRegressiva)
+
+function iniciarTempo(){
+    intervaloDeExecucao = setInterval(contagemRegressiva, 1000)
+}
+
+
+
