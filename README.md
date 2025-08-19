@@ -1,10 +1,13 @@
-**Fokus: Concentração com a Técnica Pomodoro 🍅**
+**Fokus: Sistema de simulação da Técnica Pomodoro 🍅**
 
-O Fokus é uma ferramenta inspirada na técnica Pomodoro de organização de tempo e produtividade focando tempos de trabalho de **25 minutos**, 
-intercalados com pausas estratégicas:
+O Fokus é inspirado na tecnica pomodoro, onde as atividades são dividas por ciclos/pausas com 3 níveis:
 
 * **Pausas Curtas:** 5 minutos para um descanso rápido.
 * **Pausas Longas:** A cada 4 ciclos Pomodoro, uma pausa mais extensa de 15 minutos.
+
+E todos os tempos de pausas são acompanhados por uma múscia relaxante e um papel de parede que te leva a imersão.
+Projeto feito de acordo com as aulas do curso da Alura One, no modulo de projetos web.
+Foi feito com as seguintes tecnologias:
 
 ### 🤖 Linguagens e Tecnologias:
 
